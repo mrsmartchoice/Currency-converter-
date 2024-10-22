@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<div class="calculator">
+  <input type="text" id="result" readonly>
+  <div class="buttons">
+    <!-- Calculator Buttons -->
+    <button class="clear">C</button>
+    <button class="operator">/</button>
+    <button class="operator">*</button>
+    <button class="operator">-</button>
+    <button class="number">7</button>
+    <button class="number">8</button>
+    <button class="number">9</button>
+    <button class="operator">+</button>
+    <button class="number">4</button>
+    <button class="number">5</button>
+    <button class="number">6</button>
+    <button class="equals">=</button>
+    <button class="number">1</button>
+    <button class="number">2</button>
+    <button class="number">3</button>
+    <button class="number">0</button>
+    <button class="decimal">.</button>
+  </div>
+  <!-- Toggle Button to Show Currency Converter -->
+  <button class="toggle-converter" id="toggleConverter">Currency Converter</button>
+</div>
+
+<!-- Currency Converter Section -->
+<div class="converter" id="converter" style="display: none;">
+  <!-- Currency Selectors in a Row -->
+  <div class="currency-row">
+    <select id="currency1" class="currency-select">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="NGN">NGN</option>
+    </select>
+
+    <!-- Swap Icon Using Boxicons -->
+    <button id="swap" class="swap-btn">
+      <i class="fa-solid fa-right-left"> </i></button>
+
+    <select id="currency2" class="currency-select">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="NGN">NGN</option>
+    </select>
+  </div>
+
+  <!-- Amount Input and Converted Result -->
+  <div class="currency-input-row">
+    <input type="number" id="amount" placeholder="Enter amount">
+    <input type="text" id="convertedResult" readonly>
+  </div>
+
+  <!-- Button to Toggle Back to Calculator -->
+  <button class="toggle-calculator" id="toggleCalculator">Back to Calculator</button>
+</div>
